@@ -1,0 +1,1 @@
+pgcli postgresql://notes_master:password@notes-db-instance-1.cwarswmeoza2.us-east-1.rds.amazonaws.com:5432/notes_db

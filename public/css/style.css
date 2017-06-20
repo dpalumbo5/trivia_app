@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+}
+
+nav {
+  height: 50px;
+  background: #070;
+}
+
+tr:nth-child(even) {
+  background-color: #e6e6e6;
+}
+
+tr:hover {
+  background-color: yellow;
+}
+
+td, th {
+  padding: 10px;
+}
+
+
+.Page-Container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.Nav-Link {
+  float: left;
+  padding: 10px;
+  line-height: 30px;
+}
+
+.Nav-Link a {
+  color: #eee;
+  text-decoration: none;
+}
+
+.Nav-Brand {
+  color: #eee;
+  font-size: 1.5rem;
+  margin-right: 40px;
+}
+
+.Error-Container {
+  background: red;
+  color: #eee;
+  padding: 10px;
+  margin: 10px;
+}

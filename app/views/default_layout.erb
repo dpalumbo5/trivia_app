@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <nav>
+    <div class="Nav-Link Nav-Brand">
+      My Note App
+    </div>
+    <div class="Nav-Link">
+      <a href="/notes">All Notes</a>
+    </div>
+    <div class="Nav-Link">
+      <a href="/notes/new">New Note</a>
+    </div>
+    <div class="Nav-Link">
+      <a href="/tasks">All Tasks</a>
+    </div>
+    <div class="Nav-Link">
+      <a href="/tasks/new">New Task</a>
+    </div>
+    <div class="Nav-Link">
+      <a href="/auth/logout">Logout</a>
+    </div>
+  </nav>
+  <div class="Page-Container">
+    <% if flash[:error].present? %>
+      <div class="Error-Container">
+        <%= flash[:error] %>
+      </div>
+    <% end %>
+    <%= yield %>
+  </div>
+</html>

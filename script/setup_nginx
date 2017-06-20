@@ -1,0 +1,16 @@
+#! /bin/bash
+
+mkdir /etc/nginx/upstreams
+mkdir /etc/nginx/locations
+
+# default nginx.conf
+ln -sf /home/ubuntu/apps/notes_svc/config/nginx/nginx.conf /etc/nginx/nginx.conf
+
+# upstreams
+ln -fs /home/ubuntu/apps/notes_svc/config/nginx/upstreams/notes-svc-upstream.conf /etc/nginx/upstreams/notes-svc-upstream.conf
+ln -fs /home/ubuntu/apps/notes_svc/config/nginx/upstreams/dans-notes-svc-upstream.conf /etc/nginx/upstreams/dans-notes-svc-upstream.conf
+
+# locations
+ln -fs /home/ubuntu/apps/notes_svc/config/nginx/locations/notes-svc.conf /etc/nginx/locations/notes-svc.conf
+ln -fs /home/ubuntu/apps/notes_svc/config/nginx/locations/notes-app.conf /etc/nginx/locations/notes-app.conf
+ln -fs /home/ubuntu/apps/notes_svc/config/nginx/locations/dans-notes-svc.conf /etc/nginx/locations/dans-notes-svc.conf
