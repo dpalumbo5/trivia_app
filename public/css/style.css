@@ -5,6 +5,7 @@ body {
 nav {
   height: 50px;
   background: #070;
+  color: #eee;
 }
 
 tr:nth-child(even) {
