@@ -44,6 +44,7 @@ GEM
     mini_portile2 (2.1.0)
     minitest (5.9.0)
     multi_json (1.12.1)
+    nio4r (2.5.8)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
@@ -53,7 +54,8 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    puma (3.6.0)
+    puma (4.3.12)
+      nio4r (~> 2.0)
     rack (1.6.4)
     rack-parser (0.4.0)
       rack
